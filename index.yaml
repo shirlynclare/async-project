@@ -1,0 +1,26 @@
+default_model:
+  model: ollama/llama3
+  api_base: https://raphaelfrancis.com/ollama
+  auth_token:  
+
+
+flow:
+  steps:
+    - name: parse_resume
+      type: async_task
+      function: async_parse_resume
+      inputs:
+        - resume_content
+
+    - name: generate_cover_letter
+      type: async_task
+      function: async_generate_cover_letter
+      inputs:
+        - parsed_resume
+        - job_description
+
+cover_letter_generator:
+  greeting: Dear Hiring Manager,
+  closing: Sincerely,
+
+  
