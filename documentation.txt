@@ -1,0 +1,27 @@
+#setting up the project
+#create a virtual environment 
+python3 -m venv .venv
+#activate the virtual environment
+sorce .venv/bin/activate
+#download the packages needed
+pip install -r requirements.txt
+#create files needed
+index.yaml
+index.py
+gradio.py
+requirements.txt
+.gitignore
+#index.yaml
+include default model and flow 
+#index.py
+create your custom flows 
+
+#HOW TO RUN THE PROJECT
+#to see example of outputs
+python3 index.py
+#web interface
+python3 gradio.py
+follow the link
+#using the web
+upload your document in pdf ,word or jpg format
+Write the job description
