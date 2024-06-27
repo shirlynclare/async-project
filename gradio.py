@@ -1,3 +1,4 @@
+#setting up python environment
 import gradio as gr
 import asyncio
 from index import async_parse_resume, async_generate_cover_letter, load_config

@@ -1,9 +1,34 @@
+#PROJECT OVERVIEW
+the project aims to automate generaton of cover letters personalized through writing down the job description.
+the project uses grsdo for a friendly interface and yaml for configuration and workflow
+
+NB//:
+find detailed info on the code comments
+
+
+WHAT PROBLEM DO YOU WANT TO SOLVE?
+- tedious work of writing cover letters to suite the job description
+-Project automate the process amking it easier hence saving time nad energy for other tasks
+
+WHO CAN USE THE PROJECT
+-Job seekers 
+-Product  professionals
+-interns
+
+HOW TO REUSE THE PROJECT
+-custom flow can be customized to generate emails,summaries ,reports and proposals based on input data
+
+
+MOTIVATION
+To automate the process of making cover letters hence more time saved for networking,customixing resume,solving problems from customer reviews incase if the project is modified to generate emails.
+
+SETTING  UP THE PROJECT
 #setting up the project
 #create a virtual environment 
 python3 -m venv .venv
 #activate the virtual environment
 sorce .venv/bin/activate
-#download the packages needed
+#install the packages needed
 pip install -r requirements.txt
 #create files needed
 index.yaml
@@ -25,3 +50,34 @@ follow the link
 #using the web
 upload your document in pdf ,word or jpg format
 Write the job description
+click submit
+a coer letter will be generated
+click flag to save the file in your device 
+
+USE CASES AND EXAMPLES
+#usecae
+-Automate cover letter generation for job seekers
+personalised on their resume and job description
+#example
+Scenario: A job seeker wants to apply for a Python Developer position.
+Steps:
+The job seeker uploads their resume file.
+Enters "Python Developer" in the job description textbox.
+Clicks the submit button on the Gradio interface.
+Example:
+
+Input:
+
+Resume file: Resume.pdf
+Job Description: "Python Developer"
+
+output:
+Dear Hiring Manager,
+
+Based on your job description for Python Developer, I believe my skills in Parsed resume: John Doe\n123 Main St\nPython Developer make me a strong candidate...
+
+Yours Faithfully,
+
+
+VIDEO
+Find the attached video link to the project setup and demonstration

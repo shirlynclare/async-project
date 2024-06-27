@@ -1,9 +1,10 @@
+#model configuration
 default_model:
   model: ollama/llama3
   api_base: https://raphaelfrancis.com/ollama
   auth_token:  
 
-
+#workflow steps for async tasks
 flow:
   steps:
     - name: parse_resume
@@ -21,6 +22,6 @@ flow:
 
 cover_letter_generator:
   greeting: Dear Hiring Manager,
-  closing: Sincerely,
+  closing: Yours Faithfully,
 
   
